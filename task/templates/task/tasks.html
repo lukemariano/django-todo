@@ -19,12 +19,13 @@
         </form>
 
         <v-card
-    
+    v-for="task, index in tasks" :key="index"
     max-width="100%"
+    class="mt-6"
   >
     <v-card-text>
       <p class="text-h4 text--primary">
-        {{ task }}
+        {{ task.title }}
       </p>
       <p>data</p>
     </v-card-text>
