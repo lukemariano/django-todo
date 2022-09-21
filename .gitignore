@@ -9,6 +9,15 @@ media
 # Backup files #
 *.bak
 
+#env
+.env
+.venv
+env/
+.venv/
+ENV/
+env.bak/
+/.venv
+
 # Python #
 *.py[cod]
 *$py.class
