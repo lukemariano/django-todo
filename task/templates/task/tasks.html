@@ -2,6 +2,8 @@
 
 {% block content %}
 
+{% verbatim %}
+
     <div id="app">
         <v-app>
         <form>
@@ -10,7 +12,7 @@
                     <v-text-field outlined label="Tarefa">
 
                     </v-text-field>
-                    <v-btn class="ml-4 mb-6">Create</v-btn>
+                    <v-btn type="submit" class="ml-4 mb-6">Create</v-btn>
                 
                 </div>
             </div>
@@ -21,15 +23,10 @@
     max-width="100%"
   >
     <v-card-text>
-      <div>Word of the Day</div>
       <p class="text-h4 text--primary">
-        be•nev•o•lent
+        {{ task }}
       </p>
-      <p>adjective</p>
-      <div class="text--primary">
-        well meaning and kindly.<br>
-        "a benevolent smile"
-      </div>
+      <p>data</p>
     </v-card-text>
     <v-card-actions>
       <v-btn
@@ -43,4 +40,5 @@
     </v-app>
     </div>
 
+{% endverbatim %}
 {% endblock content %}
